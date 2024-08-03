@@ -1,0 +1,56 @@
+.mainpage {
+    margin: 5%;
+    flex: 1;
+    display: grid;
+    max-width: 80vw;
+    grid-template-columns: 33.33% 33.33% 33.33%;    
+}
+.pagefooter {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    min-height: 8vh;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: aliceblue;
+}
+
+.footerLine {    
+    margin-bottom: 5px;
+    width: 90vw;
+    
+}
+
+.license {
+    margin-left: 8vw;
+    max-width: 40vw;
+}
+
+.social {
+    max-width: 40vw;
+    list-style-type: none;
+    margin-right: 8vw;
+}
+
+.social li {
+    float: right;
+    padding-right: 1vw;
+    margin-bottom: 10px;
+}
+
+
+
+
+body {
+    background-color: rgb(27, 26, 26);
+    color: aliceblue;
+    font-family: Tahoma, sans-serif;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
