@@ -1,4 +1,4 @@
-.mainpage {
+.mainPage {
     margin: 5%;
     flex: 0.9;
     display: grid;
@@ -8,17 +8,25 @@
     position: relative;
 }
 
+
+
 /* --------------------Intro-------------------- */
 .intro {
     max-width: fit-content;
     grid-column: 2/ span 3;
     grid-row: 1;
+    text-align: center;
 }
 
 .hello p, .hello h1 {
     display: inline;
     max-width: fit-content;
 }
+
+.hello {
+    text-align: left;
+}
+
 
 .intro h1 {
     font-size: 4em;
@@ -27,6 +35,7 @@
 
 .intro p {
     font-size: 2em;
+    text-align: left;
     margin: 20px 0px 20px 20px;
 }
 
@@ -34,22 +43,29 @@
     margin: 0px;
 }
 
-.imgbg {
+.imgBg {
     position: relative;
     width: 100%;
     aspect-ratio: 1;
+    transition-duration: 900ms;
     border-radius: 50%;
     background-color: blueviolet;
     grid-column: 4;
     grid-row: 1;
 }
 
-.myimg {
+.myImg {
     width: 100%;
     border-radius: 50%;
+    transition-duration: 900ms;
     filter: drop-shadow(5px 5px 5px rgba(44, 44, 44, 0.9));
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
 
 /* --------------------Description-------------------- */
 .description {
@@ -92,8 +108,83 @@
     color: rgb(166, 167, 169);
     margin: 5px 0px;
 }
+
+
+/* --------------------Skills-------------------- */
+.skills {
+    grid-row: 7;
+    grid-column: 2/ span 3;
+}
+
+.skillsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills h1, .skills p {
+    text-align: center;
+}
+
+.skills h1 {
+    margin-bottom: 1.5em;
+}
+
+.skills p {
+    font-size: 1.3em;
+    width: 100%;
+}
+
+.skills1, .skills2 {
+    flex: 0.45;
+    /* padding: .5em; */
+    text-align: left;
+    font-size: 1.2em;
+    height: 19.5em;
+    position: relative;
+    z-index: 1;
+    list-style: square;
+}
+
+.box {
+    width: 100%;
+    border: solid 1px aliceblue;
+    border-radius: 20px;
+    height: 19.5em;
     position: absolute;
-    bottom: 0px;
+    z-index: 0;
+}
+
+.technical, .soft {
+    list-style: none;
+    text-align: justify;
+    align-content: space-around;
+    font-size: 1.2em;
+    margin-left: 25px;
+    width: 90%;
+    line-height: 1.5em;
+}
+
+.bullets {
+    width: 40px;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.box:hover {
+    filter: drop-shadow(5px 5px 5px rgba(196, 196, 196, 0.6));
+    background-color: rgba(125, 125, 125, 0.1);
+}
+
+
+
+/* --------------------Footer-------------------- */
+
+.pagefooter {
+    position: relative;
+    flex: 0.1;
     left: 0px;
     text-align: center;
     min-height: 8vh;

@@ -9,26 +9,27 @@
         <script src='main.js'></script>
     </head>
     <body>
-        <div class="mainpage">
-            <div class="intro">
-                <div class="hello">
+        <div class="mainPage">
+            <!-- <header> -->
+            <div class="intro" id="intro">
+                <div class="hello" id="disappear">
                     <h1>Hi!</h1>
                     <p>&emsp;I'm</p>
                 </div>
-                <h1><strong>Romanos Sarantidis</strong>,</h1>
-                <p>a software engineer in the making!</p>
+                <h1 id="myName"><strong>Romanos Sarantidis</strong>,</h1>
+                <p id="disappear">a software engineer in the making.</p>
             </div>
-            <div class="imgbg"><img src="Images/romimg.png" class="myimg"></div>
-            
+            <div class="imgBg" id="imgBg"><img src="Images/romimg.png" class="myImg" id="myImg" title="Romanos Sarantidis"></div>
+        <!-- </header> -->
             <div class="descrLine">
                 <hr>
             </div>
-            <div class="description">
+            <div class="description" title="About me">
                 <p><em>Motivated postgraduate student in computer science, transitioning from agricultural engineering to software development. Eager to apply analytical and programming skills in dynamic tech environments.</em></p>
             </div>
             
 
-            <div class="education">
+            <div class="education" title="Education">
                 <h1 style="text-align: center;">Education</h1>
                 <ul style="list-style: square;">
                     <li>University of Piraeus(UniPi), 2023</li>
@@ -37,6 +38,58 @@
                     <p><em>&emsp;MSc on Natural Resources & Agricultural Engineering (GPA: 7.18)</em></p>
                 </ul>
             </div>
+
+            <div class="skills">
+                <h1>Skills</h1>
+                <div class="skillsList">
+                    <div class="skills1" title="Technical Skills">
+                        <div class="box"></div>
+                        <p><u>Technical</u></p>
+                        <table class="technical">
+                            <tr>
+                                <td class="bullets"><img src="Images/code.png"></td>
+                                <td>Languages: C#, Python, Java</td>
+                            </tr>
+                            <tr>
+                                <td class="bullets"><img src="Images/web.png"></td>
+                                <td>Web Technologies: HTML, CSS, Js</td>
+                            </tr>
+                            <tr>
+                                <td class="bullets"><img src="Images/database.png"></td>
+                                <td>DB Management Systems: SQLite, MySQL</td>
+                            </tr>
+                            <tr>
+                                <td class="bullets"><img src="Images/computer.png"></td>
+                                <td>Tools & Platforms: GitHub, VS code, VS, Adobe(Ps, Lr, Il), AutoCAD, Microsoft Office (Word, Excel, PowerPoint)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="skills2" title="Soft Skills">
+                        <div class="box"></div>
+                        <p><u>Soft</u></p>
+                        <table class="soft">
+                            <tr>
+                                <td class="bullets"><img src="Images/think.png"></td>
+                                <td>Strong analytical skills developed through engineering coursework.</td>
+                            </tr>
+                            <tr>
+                                <td class="bullets"><img src="Images/multitask.png"></td>
+                                <td>Proven ability to manage multiple projects and deadlines effectively.</td>
+                            </tr>
+                            <tr>
+                                <td class="bullets"><img src="Images/teamwork.png"></td>
+                                <td>Hard worker and a good fit to a team environment.</td>
+                            </tr>
+                            <tr>
+                                <td class="bullets"><img src="Images/adapt.png"></td>
+                                <td>Thirst for learning and quick to adapt.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <div class="pagefooter">
             <footer>
                 <hr class="footerLine">
