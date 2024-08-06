@@ -1,23 +1,25 @@
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
 
 
-window.onscroll = function() {scrollFunction()};
-
-var header = document.getElementById("intro");
-
-var sticky = header.offsetTop;
-
-
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    // document.getElementById("myimg").style.width = "20%";
-    document.getElementById("imgBg").style.width = "20%";
-    header.classList.add("sticky");
-    document.getElementById("disappear").style.display = 'none';
-    document.getElementById("myName").style.fontSize = '2em';
+  if (scrollTop > 5) {
+    document.getElementById("disappear").classList.add('hide');
+    document.getElementById("disappear1").classList.add('hide');
+    document.getElementsByTagName("header")[0].classList.add('transform');
+    document.getElementById("imgBg").classList.add('shrink');
+    document.getElementById("myName").innerText = 'Romanos Sarantidis';
+    document.getElementById("myName").classList.add('shorten');
+    document.getElementById("mainPage").classList.add('rearrange');
   } else {
-    // document.getElementById("myimg").style.width = "100%";
-    document.getElementById("imgBg").style.width = "100%";
-    header.classList.remove("sticky");
-
+    document.getElementById("disappear").classList.remove('hide');
+    document.getElementById("disappear1").classList.remove('hide');
+    document.getElementsByTagName("header")[0].classList.remove('transform');
+    document.getElementById("imgBg").classList.remove('shrink');
+    document.getElementById("myName").innerText = 'Romanos Sarantidis,';
+    document.getElementById("myName").classList.remove('shorten');
+    document.getElementById("mainPage").classList.remove('rearrange');
   }
-}
+
+});
+
+
