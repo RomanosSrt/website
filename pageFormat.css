@@ -327,3 +327,17 @@ body {
 .rearrange {
     margin-top: 30vh;
 }
+
+
+
+#prefooter {
+    display: none;
+    width: 80vw;
+    margin: 10vh 10vw;
+    text-align: center;
+    justify-content: center;
+}
+
+#prefooter img {
+    height: 80vh;
+}

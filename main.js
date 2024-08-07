@@ -26,11 +26,11 @@ window.addEventListener('scroll', () => {
 var faults = 0;
 
 document.onkeydown = (e) => {
-  if (e.key == "F12") {
-    e.preventDefault();
-    faults++;
-    consequences(faults);
-  }
+  // if (e.key == "F12") {
+  //   e.preventDefault();
+  //   faults++;
+  //   consequences(faults);
+  // }
   if (e.ctrlKey && (e.shiftKey && (e.code == 'KeyI' || e.code == 'KeyC' || e.code == 'KeyJ')) || (e.code == 'KeyU')) {
     e.preventDefault();
     faults++;
@@ -48,8 +48,10 @@ function consequences(strikes) {
       break;
     case 3:
       alert("Τέλος, το έχασες!");
-      setTimeout(close, 2000);
-      close();
+      document.getElementsByTagName("header")[0].style.display = 'none';
+      document.getElementById("mainPage").style.display = 'none';
+      document.getElementsByTagName("footer")[0].style.display = 'none';
+      document.getElementById("prefooter").style.display = 'block';
       break;
   }
 }
