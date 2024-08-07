@@ -26,11 +26,11 @@ window.addEventListener('scroll', () => {
 var faults = 0;
 
 document.onkeydown = (e) => {
-  // if (e.key == "F12") {
-  //   e.preventDefault();
-  //   faults++;
-  //   consequences(faults);
-  // }
+  if (e.key == "F12") {
+    e.preventDefault();
+    faults++;
+    consequences(faults);
+  }
   if (e.ctrlKey && (e.shiftKey && (e.code == 'KeyI' || e.code == 'KeyC' || e.code == 'KeyJ')) || (e.code == 'KeyU')) {
     e.preventDefault();
     faults++;
