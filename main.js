@@ -6,6 +6,7 @@ window.addEventListener('scroll', () => {
   if (scrollTop > 5) {
     document.getElementById("disappear").classList.add('hide');
     document.getElementById("disappear1").classList.add('hide');
+    document.getElementsByTagName("header")[0].style.transitionDuration = '500ms';
     document.getElementsByTagName("header")[0].classList.add('transform');
     document.getElementById("imgBg").classList.add('shrink');
     document.getElementById("myName").innerText = 'Romanos Sarantidis';
@@ -14,6 +15,7 @@ window.addEventListener('scroll', () => {
   } else {
     document.getElementById("disappear").classList.remove('hide');
     document.getElementById("disappear1").classList.remove('hide');
+    document.getElementsByTagName("header")[0].style.transitionDuration = '500ms';
     document.getElementsByTagName("header")[0].classList.remove('transform');
     document.getElementById("imgBg").classList.remove('shrink');
     document.getElementById("myName").innerText = 'Romanos Sarantidis,';
@@ -55,3 +57,18 @@ function consequences(strikes) {
       break;
   }
 }
+
+
+
+window.addEventListener("resize", () => {
+  const header = document.querySelector("header");
+  const scrollTop = window.scrollY;
+
+  if (scrollTop > 5) {
+    header.style.transitionDuration = '10ms';
+  } else {
+    header.style.transitionDuration = '10ms';
+  }
+
+  document.getElementsByClassName("box").style.transitionDuration = '0ms';
+});
