@@ -48,7 +48,7 @@ function consequences(strikes) {
       break;
     case 3:
       alert("Τέλος, το έχασες!");
-      setTimeout(close, 2000);
+      //setTimeout(close, 2000);
       close();
       break;
   }
