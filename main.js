@@ -49,7 +49,7 @@ function consequences(strikes) {
     case 3:
       alert("Τέλος, το έχασες!");
       //setTimeout(close, 2000);
-      close("https://romanossrt.github.io/website/index.html");
+      close("https://romanossrt.github.io/website/");
       break;
   }
 }
