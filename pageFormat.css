@@ -184,7 +184,7 @@ header {
 .box:hover {
     filter: drop-shadow(5px 5px 5px rgba(196, 196, 196, 0.6));
     background-color: rgba(50, 37, 60, 0.2);
-
+    transform: scale(1.1);
 }
 
 
